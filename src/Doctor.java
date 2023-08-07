@@ -1,14 +1,17 @@
 public class Doctor {
     static int id = 0;
+    String email;
     String name;
     String speciality;
 
-    Doctor() {
+    public Doctor() {
         System.out.println("Building Doctor Object");
-        id++;
     }
-    Doctor (String name){
-        System.out.println("Doctor's Name is: " + name);
+    public Doctor (String name, String speciality){
+        id++;
+        this.name = name;
+        this.speciality = speciality;
+        System.out.println("Doctor's Name is: " + name + "Speciality: " + speciality);
     }
 
     public void showName() {
